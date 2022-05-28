@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shivchauhan.csenotes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CSENotes">
+        <activity
+            android:name=".Sem2ChemBook"
+            android:exported="true"
+            android:label="Book"
+            android:parentActivityName=".Sem2Chem" />
+        <activity
+            android:name=".Sem2MathsBook"
+            android:exported="true"
+            android:label="Book"
+            android:parentActivityName=".Sem2Maths" />
+        <activity
+            android:name=".Sem1MathsBook"
+            android:exported="true"
+            android:label="Book"
+            android:parentActivityName=".Sem1Maths" />
+        <activity
+            android:name=".Sem2Workshop"
+            android:exported="true"
+            android:label="Workshop"
+            android:parentActivityName=".Sem2" />
+        <activity
+            android:name=".Sem2English"
+            android:exported="true"
+            android:label="English"
+            android:parentActivityName=".Sem2" />
+        <activity
+            android:name=".Sem2Pps"
+            android:exported="true"
+            android:label="PPS"
+            android:parentActivityName=".Sem2" />
+        <activity
+            android:name=".Sem2Chem"
+            android:exported="true"
+            android:label="Chemistry"
+            android:parentActivityName=".Sem2" />
+        <activity
+            android:name=".Sem2Maths"
+            android:exported="true"
+            android:label="Mathematics"
+            android:parentActivityName=".Sem2" />
+        <activity
+            android:name=".Sem1Egd"
+            android:exported="true"
+            android:label="EGD"
+            android:parentActivityName=".Sem1" />
+        <activity
+            android:name=".Sem1Bee"
+            android:exported="true"
+            android:label="BEE"
+            android:parentActivityName=".Sem1" />
+        <activity
+            android:name=".Sem1Physics"
+            android:exported="true"
+            android:label="Physics"
+            android:parentActivityName=".Sem1" />
+        <activity
+            android:name=".Sem1Maths"
+            android:exported="true"
+            android:label="Mathematics"
+            android:parentActivityName=".Sem1" />
+        <activity
+            android:name=".Sem2"
+            android:exported="true"
+            android:label="2nd Semester"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Sem1"
+            android:exported="true"
+            android:label="1st Semester"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

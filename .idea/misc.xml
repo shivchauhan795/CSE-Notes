@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem1.xml" value="0.2" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem1_bee.xml" value="0.25" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem1_egd.xml" value="0.25" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem1_maths.xml" value="0.1" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem1_maths_book.xml" value="0.1" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem1_physics.xml" value="0.264" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem2.xml" value="0.25" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem2_chem.xml" value="0.25" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem2_chem_book.xml" value="0.25" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem2_english.xml" value="0.25" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem2_maths.xml" value="0.1" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem2_maths_book.xml" value="0.264" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem2_pps.xml" value="0.25" />
+        <entry key="..\:/CSENotes/app/src/main/res/layout/activity_sem2_workshop.xml" value="0.25" />
+        <entry key="..\:/CSENotes/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26614583333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

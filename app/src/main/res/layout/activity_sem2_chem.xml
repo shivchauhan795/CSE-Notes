@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDCECF"
+    tools:context=".Sem2Chem">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginBottom="15dp"
+                android:foregroundGravity="center_vertical|center|center_horizontal"
+                android:gravity="center|center_horizontal|center_vertical"
+
+                android:onClick="openSem2ChemBooks"
+                android:text="@string/Sem2Chem_book"
+                android:textColor="#040303"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,UsingOnClickInXml" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

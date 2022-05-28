@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDCECF"
+    tools:context=".Sem2MathsBook">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/A1"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp"
+                android:foregroundGravity="center_vertical|center|center_horizontal"
+
+
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="@string/measure_of_central_tendancy"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A2"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/measure_of_dispersion"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A3"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/measure_of_skewnness_and_kurtosis"
+                android:textColor="#040303"
+                android:textSize="12sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A4"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/correlation"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A5"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/linear_regression_analysis"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A6"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/probability"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A7"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/random_variable"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A8"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/expectation_of_random_variable"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A9"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/binomial_distribution"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A10"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/poission_distribution"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/A11"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/normal_distribution"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A12"
+                android:layout_width="225dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/curve_fitting_and_principal_of_least_square"
+                android:textColor="#040303"
+                android:textSize="12sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A13"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/sampling"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A14"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+                android:text="@string/large_sample_test"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A15"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="15dp"
+
+                android:text="@string/small_sample_test"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/A16"
+                android:layout_width="225dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+
+
+                android:layout_marginBottom="90dp"
+
+                android:text="@string/statistical_table"
+                android:textColor="#040303"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:backgroundTint="#25BD9A"
+                tools:ignore="UsingOnClickInXml" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
