@@ -22,9 +22,8 @@ public class Login_Register_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Login_Register_main.this, "Thanks", Toast.LENGTH_SHORT).show();
-                Intent intent  = new Intent(Login_Register_main.this,Login.class);
+                Intent intent = new Intent(Login_Register_main.this, Login.class);
                 startActivity(intent);
-                
             }
         });
     }
@@ -36,7 +35,7 @@ public class Login_Register_main extends AppCompatActivity {
 //    }
 
     public void openRegister(View view) {
-        Intent intent = new Intent(this, Register.class);
+        Intent intent = new Intent(Login_Register_main.this, Register.class);
         startActivity(intent);
     }
 

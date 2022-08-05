@@ -97,7 +97,7 @@ public class Register extends AppCompatActivity {
                                 Toast.makeText(Register.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(Register.this, Dashboard.class);
                                 startActivity(intent);
-                                finish();
+                                finishAffinity();
                             } else {
                                 Toast.makeText(Register.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                             }

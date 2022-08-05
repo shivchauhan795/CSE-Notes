@@ -65,7 +65,7 @@ public class Login extends AppCompatActivity {
             public void onSuccess(AuthResult authResult) {
                 Toast.makeText(Login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(Login.this, Dashboard.class));
-                finish();
+                finishAffinity();
 
             }
         });
