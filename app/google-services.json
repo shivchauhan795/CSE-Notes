@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "571860436245",
+    "firebase_url": "https://cse-notes-b495e-default-rtdb.firebaseio.com",
+    "project_id": "cse-notes-b495e",
+    "storage_bucket": "cse-notes-b495e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571860436245:android:b114168a6f86b966c7d51c",
+        "android_client_info": {
+          "package_name": "com.shivchauhan.csenotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571860436245-kmjhprp689o54iddiln85fs54qj9fop9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByGzTYZTClr-NVo5OKCUG1-LEa3oDpzdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571860436245-kmjhprp689o54iddiln85fs54qj9fop9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

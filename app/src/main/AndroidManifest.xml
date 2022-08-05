@@ -13,77 +13,45 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSENotes">
         <activity
-            android:name=".Sem2ChemBook"
-            android:exported="true"
-            android:label="Book"
-            android:parentActivityName=".Sem2Chem" />
+            android:name=".forgot_password"
+            android:exported="false" />
         <activity
-            android:name=".Sem2MathsBook"
-            android:exported="true"
-            android:label="Book"
-            android:parentActivityName=".Sem2Maths" />
+            android:name=".Login"
+            android:exported="false" />
         <activity
-            android:name=".Sem1MathsBook"
-            android:exported="true"
-            android:label="Book"
-            android:parentActivityName=".Sem1Maths" />
+            android:name=".Register"
+            android:exported="false" />
         <activity
-            android:name=".Sem2Workshop"
-            android:exported="true"
-            android:label="Workshop"
-            android:parentActivityName=".Sem2" />
+            android:name=".Login_Register_main"
+            android:exported="false" />
         <activity
-            android:name=".Sem2English"
-            android:exported="true"
-            android:label="English"
-            android:parentActivityName=".Sem2" />
+            android:name=".Profile"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1720186780950212~6179623631" />
+
         <activity
-            android:name=".Sem2Pps"
-            android:exported="true"
-            android:label="PPS"
-            android:parentActivityName=".Sem2" />
+            android:name=".chem"
+            android:exported="false" />
         <activity
-            android:name=".Sem2Chem"
-            android:exported="true"
-            android:label="Chemistry"
-            android:parentActivityName=".Sem2" />
+            android:name=".maths2"
+            android:exported="false" />
         <activity
-            android:name=".Sem2Maths"
-            android:exported="true"
-            android:label="Mathematics"
-            android:parentActivityName=".Sem2" />
+            android:name=".maths1"
+            android:exported="false" />
         <activity
-            android:name=".Sem1Egd"
-            android:exported="true"
-            android:label="EGD"
-            android:parentActivityName=".Sem1" />
+            android:name=".Sem5"
+            android:exported="false" />
         <activity
-            android:name=".Sem1Bee"
-            android:exported="true"
-            android:label="BEE"
-            android:parentActivityName=".Sem1" />
+            android:name=".Sem4"
+            android:exported="false" />
         <activity
-            android:name=".Sem1Physics"
-            android:exported="true"
-            android:label="Physics"
-            android:parentActivityName=".Sem1" />
+            android:name=".Sem3"
+            android:exported="false" />
         <activity
-            android:name=".Sem1Maths"
-            android:exported="true"
-            android:label="Mathematics"
-            android:parentActivityName=".Sem1" />
-        <activity
-            android:name=".Sem2"
-            android:exported="true"
-            android:label="2nd Semester"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".Sem1"
-            android:exported="true"
-            android:label="1st Semester"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -91,6 +59,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Sem2"
+            android:exported="true"
+            android:label="2nd Semester"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Sem1"
+            android:exported="true"
+            android:label="1st Semester"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true" />
     </application>
 
 </manifest>

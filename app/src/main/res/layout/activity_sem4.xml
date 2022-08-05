@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sem4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/chango"
+                android:padding="15dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
+                android:text="@string/Fourth_Semester"
+                android:textColor="@color/head_color"
+                android:textSize="30sp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/sem2"
+                android:layout_marginTop="25dp"
+                android:columnCount="1"
+                android:padding="10dp"
+                android:rowCount="6">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mathsCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:fontFamily="cursive"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#BDBB86FC"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp">
+
+                    <!--        This is Relative Layout of all hidden as well as not hidden mode-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_back_1">
+
+                        <!--        This is Relative Layout of Shown -->
+                        <RelativeLayout
+                            android:id="@+id/mathsOriginal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!-- Image/Logo of Mathematics -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginStart="200dp"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:src="@drawable/maths"
+                                tools:ignore="ContentDescription" />
+
+                            <!--        Linear Layout for heading Mathematics -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <!--                            Heading Mathematics-->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="cursive"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/mathematics"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="40sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <!--        Below this is the hidden mode -->
+
+                        <LinearLayout
+                            android:id="@+id/mathsDropDown"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mathsOriginal"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Maths_Module1"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/module_1"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="UsingOnClickInXml" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Maths_Module2"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/module_2"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="UsingOnClickInXml" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Maths_Module3"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/module_3"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="UsingOnClickInXml" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Maths_Module4"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/module_4"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="UsingOnClickInXml" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Maths_Module5"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/module_5"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="UsingOnClickInXml" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Maths_lords"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/lords"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="UsingOnClickInXml" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Maths_SolvedQP"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/solvedQP"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="UsingOnClickInXml" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/daaCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:fontFamily="cursive"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#BDBB86FC"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp">
+
+                    <!--        This is Relative Layout of all hidden as well as not hidden mode-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_back_2">
+
+                        <!--        This is Relative Layout of Shown -->
+                        <RelativeLayout
+                            android:id="@+id/daaOriginal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!-- Image/Logo of daa -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginStart="200dp"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:src="@drawable/daa"
+                                tools:ignore="ContentDescription" />
+
+                            <!--        Linear Layout for heading daa -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <!--                            Heading daa-->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="cursive"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/daa"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="40sp"
+
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <!--        Below this is the hidden mode -->
+
+                        <LinearLayout
+                            android:id="@+id/daaDropDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/daaOriginal"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/unit_1"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/unit_2"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/unit_3"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/unit_4"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/osCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:fontFamily="cursive"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#BDBB86FC"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp">
+
+                    <!--        This is Relative Layout of all hidden as well as not hidden mode-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_back_3">
+
+                        <!--        This is Relative Layout of Shown -->
+                        <RelativeLayout
+                            android:id="@+id/osOriginal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!-- Image/Logo of Mathematics -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginStart="200dp"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:src="@drawable/oss"
+                                tools:ignore="ContentDescription" />
+
+                            <!--        Linear Layout for heading os -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <!--                            Heading os-->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="cursive"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/os"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="40sp"
+
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <!--        Below this is the hidden mode -->
+
+                        <LinearLayout
+                            android:id="@+id/osDropDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/osOriginal"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/teacher_notes"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/unit_2"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/unit_3"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/unit_4"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/coaCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:fontFamily="cursive"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#BDBB86FC"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp">
+
+                    <!--        This is Relative Layout of all hidden as well as not hidden mode-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_back_4">
+
+                        <!--        This is Relative Layout of Shown -->
+                        <RelativeLayout
+                            android:id="@+id/coaOriginal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!-- Image/Logo of Mathematics -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginStart="200dp"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:src="@drawable/coa"
+                                tools:ignore="ContentDescription" />
+
+                            <!--        Linear Layout for heading de -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <!--        Heading de -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="cursive"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/coa"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="40sp"
+
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <!--        Below this is the hidden mode -->
+
+                        <LinearLayout
+                            android:id="@+id/coaDropDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/coaOriginal"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/book"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:fontFamily="casual"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/unit_2"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/unit_3"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/unit_4"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/uhvCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:fontFamily="cursive"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#BDBB86FC"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp">
+
+                    <!--        This is Relative Layout of all hidden as well as not hidden mode-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_back_5">
+
+                        <!--        This is Relative Layout of Shown -->
+                        <RelativeLayout
+                            android:id="@+id/uhvOriginal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!-- Image/Logo of uhv -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginStart="200dp"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:src="@drawable/uhv"
+                                tools:ignore="ContentDescription" />
+
+                            <!--        Linear Layout for heading uhv -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <!--        Heading uhv -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="cursive"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/uhv"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="40sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <!--        Below this is the hidden mode -->
+
+                        <LinearLayout
+                            android:id="@+id/uhvDropDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/uhvOriginal"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/book"
+                                    android:onClick="open_Sem4_uhv_book"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="UsingOnClickInXml" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/complete_notes"
+                                    android:onClick="open_Sem4_uhv_complete_notes"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="UsingOnClickInXml" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/evsCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="10dp"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:fontFamily="cursive"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="#BDBB86FC"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="0dp">
+
+                    <!--        This is Relative Layout of all hidden as well as not hidden mode-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_back_6">
+
+                        <!--        This is Relative Layout of Shown -->
+                        <RelativeLayout
+                            android:id="@+id/evsOriginal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!-- Image/Logo of evs -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="100dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:layout_marginStart="200dp"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:src="@drawable/evs"
+                                tools:ignore="ContentDescription" />
+
+                            <!--        Linear Layout for heading evs -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                tools:ignore="TooManyViews">
+
+
+                                <!--        Heading evs -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="cursive"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/evs"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="40sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <!--        Below this is the hidden mode -->
+
+                        <LinearLayout
+                            android:id="@+id/evsDropDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/evsOriginal"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/book"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/unit_2"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="TooManyViews" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                tools:ignore="TooManyViews">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/unit_3"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="0dp"
+                                    android:text="@string/unit_4"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1720186780950212/6850541621">
+
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

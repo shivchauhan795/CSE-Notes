@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/Semester">
+        <menu>
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/sem1"
+                    android:icon="@drawable/ic_baseline_filter_1_24"
+                    android:title="@string/Semester1" />
+                <item
+                    android:id="@+id/sem2"
+                    android:icon="@drawable/ic_baseline_filter_2_24"
+                    android:title="@string/Semester2" />
+                <item
+                    android:id="@+id/sem3"
+                    android:icon="@drawable/ic_baseline_filter_3_24"
+                    android:title="@string/Semester3" />
+                <item
+                    android:id="@+id/sem4"
+                    android:icon="@drawable/ic_baseline_filter_4_24"
+                    android:title="@string/Semester4" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/Youtube">
+
+        <menu>
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/cCourse"
+                    android:icon="@drawable/youtube"
+                    android:title="C Course" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/AboutUs">
+
+        <menu>
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/share"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="@string/Share" />
+                <item
+                    android:id="@+id/rateus"
+                    android:icon="@drawable/ic_baseline_rate_review_24"
+                    android:title="@string/RateUs" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

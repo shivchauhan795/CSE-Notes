@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE2E2"
+    tools:context=".Login_Register_main">
+    <!--    232121-->
+    <ImageView
+        android:id="@+id/main_icon"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/csnote" />
+
+    <TextView
+        android:id="@+id/login_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-55dp"
+        android:fontFamily="@font/alata"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/login_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_app_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/login_register_back"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/view_login"
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:layout_alignTop="@+id/login_back"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/head_color" />
+
+
+    <GridLayout
+        android:id="@+id/grid_login_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_login"
+        android:layout_margin="40dp"
+        android:columnCount="1"
+        android:rowCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill|center"
+            android:backgroundTint="#EBFF1155"
+            android:foregroundGravity="fill|center"
+            app:cardCornerRadius="18dp">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_horizontal"
+                android:fontFamily="@font/alata"
+                android:gravity="center_horizontal|center_vertical|center"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:onClick="openRegister"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill|center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FADADD"
+            android:foregroundGravity="fill|center"
+            android:padding="3dp"
+            app:cardCornerRadius="18dp">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_horizontal"
+                android:background="@drawable/login_register_boundary"
+                android:fontFamily="@font/alata"
+                android:gravity="center_horizontal|center_vertical|center"
+                android:text="@string/create_new_account"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/const_login"-->
+    <!--        android:layout_marginTop="100dp"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@+id/login_app_name">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/login_back"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_marginTop="70dp"-->
+    <!--            android:src="@drawable/login_register_back"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:ignore="ContentDescription" />-->
+
+    <!--        <View-->
+    <!--            android:id="@+id/view_login"-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="4dp"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:background="@color/head_color"-->
+    <!--            android:foregroundGravity="center"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="@+id/login_back" />-->
+
+    <!--        <GridLayout-->
+    <!--            android:id="@+id/grid"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="40dp"-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:columnCount="1"-->
+    <!--            android:rowCount="2"-->
+    <!--            app:layout_constraintTop_toTopOf="@+id/view_login">-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="70dp"-->
+    <!--                android:layout_row="0"-->
+    <!--                android:layout_rowWeight="1"-->
+    <!--                android:layout_column="0"-->
+    <!--                android:layout_columnWeight="1"-->
+    <!--                android:layout_gravity="center|center_vertical"-->
+    <!--                android:backgroundTint="#EBFF1155"-->
+    <!--                app:cardCornerRadius="18dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_gravity="center|center_horizontal"-->
+    <!--                    android:fontFamily="@font/alata"-->
+    <!--                    android:gravity="center_horizontal|center_vertical|center"-->
+    <!--                    android:text="@string/login"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textSize="25sp"-->
+    <!--                    android:textStyle="bold" />-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--            <androidx.cardview.widget.CardView-->
+    <!--                android:id="@+id/create"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="70dp"-->
+    <!--                android:layout_row="1"-->
+    <!--                android:layout_rowWeight="1"-->
+    <!--                android:layout_column="0"-->
+    <!--                android:layout_columnWeight="1"-->
+    <!--                android:layout_gravity="center|center_vertical"-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                android:backgroundTint="#FADADD"-->
+    <!--                app:cardCornerRadius="18dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:layout_gravity="center|center_horizontal"-->
+    <!--                    android:background="@drawable/login_register_boundary"-->
+    <!--                    android:fontFamily="@font/alata"-->
+    <!--                    android:gravity="center_horizontal|center_vertical|center"-->
+    <!--                    android:text="@string/create_new_account"-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="25sp" />-->
+    <!--            </androidx.cardview.widget.CardView>-->
+
+    <!--        </GridLayout>-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</RelativeLayout>
