@@ -15,12 +15,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:textColor="@color/head_color"
             android:fontFamily="@font/chango"
             android:padding="15dp"
             android:paddingStart="20dp"
             android:paddingEnd="0dp"
             android:text="@string/maths_books_m2"
+            android:textColor="@color/head_color"
             android:textSize="30sp" />
 
 

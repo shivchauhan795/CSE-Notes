@@ -417,7 +417,7 @@
                                     android:paddingEnd="0dp"
                                     android:text="@string/bee"
                                     android:textAlignment="center"
-                                    android:textAllCaps="false"
+                                    android:textAllCaps="true"
                                     android:textColor="@color/text_color"
                                     android:textSize="40sp"
 
@@ -570,7 +570,7 @@
                                     android:paddingEnd="0dp"
                                     android:text="@string/egd"
                                     android:textAlignment="center"
-                                    android:textAllCaps="false"
+                                    android:textAllCaps="true"
                                     android:textColor="@color/text_color"
                                     android:textSize="40sp"
 

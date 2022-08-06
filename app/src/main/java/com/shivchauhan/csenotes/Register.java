@@ -20,6 +20,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.auth.User;
 
+import java.util.Objects;
+
 public class Register extends AppCompatActivity {
     EditText name, email, password;
     Button register;
@@ -90,7 +92,7 @@ public class Register extends AppCompatActivity {
 //                    User user = new User(s_name, s_email);
                     Users users = new Users(s_name, s_email);
                     FirebaseDatabase.getInstance().getReference("Users").child(FirebaseAuth.getInstance()
-                            .getCurrentUser().getUid()).setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            .getCurrentUser().getUid()).setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
@@ -104,7 +106,7 @@ public class Register extends AppCompatActivity {
                         }
                     });
                 } else {
-                    Toast.makeText(Register.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(Register.this, Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_LONG).show();
                 }
             }
         });

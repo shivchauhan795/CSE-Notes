@@ -127,9 +127,9 @@
             <TextView
                 android:id="@+id/forgot_password"
                 android:layout_width="wrap_content"
-                android:onClick="open_forgot_password"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:onClick="open_forgot_password"
                 android:text="@string/forgot_password"
                 android:textColor="@color/black" />
 

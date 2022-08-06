@@ -93,13 +93,13 @@
             android:layout_height="70dp"
             android:layout_row="1"
             android:layout_rowWeight="1"
-            android:onClick="openRegister"
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill|center"
             android:layout_marginTop="20dp"
             android:backgroundTint="#FADADD"
             android:foregroundGravity="fill|center"
+            android:onClick="openRegister"
             android:padding="3dp"
             app:cardCornerRadius="18dp">
 

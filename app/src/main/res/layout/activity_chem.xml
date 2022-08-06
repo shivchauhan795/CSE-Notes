@@ -14,13 +14,13 @@
             android:id="@+id/sem1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/head_color"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/chango"
             android:padding="15dp"
             android:paddingStart="20dp"
             android:paddingEnd="0dp"
             android:text="@string/chemistry_books"
+            android:textColor="@color/head_color"
             android:textSize="30sp" />
 
 

@@ -19,6 +19,7 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Dashboard extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
 
@@ -41,7 +42,6 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
-
 
 
         toolbar = findViewById(R.id.toolbar);
@@ -196,6 +196,12 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 drawerLayout.closeDrawer(GravityCompat.START);
                 startActivity(new Intent(Intent.ACTION_VIEW, uri));
                 break;
+            case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
+                Toast.makeText(Dashboard.this, "Logged Out", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Dashboard.this, Login.class));
+                finish();
+                break;
             case R.id.rateus:
                 Uri uri1 = Uri.parse("https://play.google.com/store/apps/details?id=com.shivchauhan.csenotes");
                 Intent intent1 = new Intent(Intent.ACTION_VIEW, uri1);
@@ -205,8 +211,6 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         }
         return true;
     }
-
-
 
 
 //    public void contribute(View view){
