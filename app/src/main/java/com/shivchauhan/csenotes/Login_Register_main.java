@@ -21,18 +21,11 @@ public class Login_Register_main extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Login_Register_main.this, "Thanks", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(Login_Register_main.this, Login.class);
                 startActivity(intent);
             }
         });
     }
-
-
-//    public void openLogin(View view) {
-//        Intent intent = new Intent(this, Login.class);
-//        startActivity(intent);
-//    }
 
     public void openRegister(View view) {
         Intent intent = new Intent(Login_Register_main.this, Register.class);

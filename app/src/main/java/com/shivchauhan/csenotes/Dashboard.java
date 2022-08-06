@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
@@ -31,6 +32,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
     NavigationView navigationView;
     static final float END_SCALE = 0.7f;
     ScrollView content;
+    ImageButton contribute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +41,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
             }
         });
 
@@ -51,6 +53,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_view);
         content = findViewById(R.id.content);
+        contribute = findViewById(R.id.contribute);
 
         navigationDrawer();
 
@@ -66,11 +69,26 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         c4.setOnClickListener(this);
         c5.setOnClickListener(this);
 
+        contribute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Dashboard.this, "Thank you!!", Toast.LENGTH_SHORT).show();
+                String[] addresses = {"csenoteshelp@gmail.com"};
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("*/*");
+                intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+                boolean attachment = false;
+                intent.putExtra(Intent.EXTRA_STREAM, attachment);
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(intent);
+                }
+            }
+        });
+
     }
 
     public void open_profile(View view) {
-        Intent intent = new Intent(this, Profile.class);
-        startActivity(intent);
+
     }
 
     @Override
@@ -148,8 +166,9 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 break;
         }
     }
-    //  on clicking navigation drawer icons
 
+
+    //  on clicking navigation drawer icons
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
@@ -186,7 +205,6 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                     i.putExtra(Intent.EXTRA_TEXT, shareMessage);
                     startActivity(Intent.createChooser(i, "Share With"));
 
-
                 } catch (Exception e) {
                     Toast.makeText(this, "Unable to share this app", Toast.LENGTH_SHORT).show();
                 }
@@ -207,25 +225,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 Intent intent1 = new Intent(Intent.ACTION_VIEW, uri1);
                 intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent1);
-
         }
         return true;
     }
-
-
-//    public void contribute(View view){
-//        Toast.makeText(this, "Thank you!!", Toast.LENGTH_SHORT).show();
-//        String [] addresses = {"csenoteshelp@gmail.com"};
-//        Intent intent = new Intent(Intent.ACTION_SEND);
-//        intent.setType("*/*");
-//        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
-////        intent.putExtra(Intent.EXTRA_TEXT,"Thanks for the Support!!");
-////        intent.putExtra(Intent.EXTRA_SUBJECT, "This is a subject");
-//        boolean attachment = false;
-//        intent.putExtra(Intent.EXTRA_STREAM, attachment);
-//        if (intent.resolveActivity(getPackageManager()) != null) {
-//            startActivity(intent);
-//        }
-//    }
-
 }

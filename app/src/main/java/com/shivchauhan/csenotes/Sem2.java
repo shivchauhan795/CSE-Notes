@@ -1,5 +1,6 @@
 package com.shivchauhan.csenotes;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -48,7 +49,7 @@ public class Sem2 extends AppCompatActivity {
             }
 
             @Override
-            public void onAdFailedToLoad(LoadAdError adError) {
+            public void onAdFailedToLoad(@NonNull LoadAdError adError) {
                 // Code to be executed when an ad request fails.
                 super.onAdFailedToLoad(adError);
                 mAdView.loadAd(adRequest);

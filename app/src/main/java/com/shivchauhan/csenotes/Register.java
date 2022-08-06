@@ -42,6 +42,7 @@ public class Register extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 registerUser();
             }
         });
@@ -74,13 +75,13 @@ public class Register extends AppCompatActivity {
 
 
         if (!Patterns.EMAIL_ADDRESS.matcher(s_email).matches()) {
-            email.setError("Enter a valid Email address");
+            email.setError("Enter a valid Email Address");
             email.requestFocus();
             return;
         }
 
         if (s_password.length() < 6) {
-            password.setError("Password Required");
+            password.setError("Password too short!!");
             password.requestFocus();
             return;
         }
@@ -89,10 +90,10 @@ public class Register extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-//                    User user = new User(s_name, s_email);
+                    Toast.makeText(Register.this, "Registering...", Toast.LENGTH_SHORT).show();
                     Users users = new Users(s_name, s_email);
-                    FirebaseDatabase.getInstance().getReference("Users").child(FirebaseAuth.getInstance()
-                            .getCurrentUser().getUid()).setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    FirebaseDatabase.getInstance().getReference("Users").child(Objects.requireNonNull(FirebaseAuth.getInstance()
+                            .getCurrentUser()).getUid()).setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {

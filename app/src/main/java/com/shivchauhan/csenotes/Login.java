@@ -52,6 +52,7 @@ public class Login extends AppCompatActivity {
                     password.setError("Password Required");
                     password.requestFocus();
                 } else {
+                    Toast.makeText(Login.this, "Logging In...", Toast.LENGTH_SHORT).show();
                     loginUser(txt_email, txt_password);
                 }
             }
@@ -63,7 +64,7 @@ public class Login extends AppCompatActivity {
         auth.signInWithEmailAndPassword(txt_email, txt_password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
-                Toast.makeText(Login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Login.this, "Logged In Successfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(Login.this, Dashboard.class));
                 finishAffinity();
 

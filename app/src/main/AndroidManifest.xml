@@ -26,9 +26,6 @@
         <activity
             android:name=".Login_Register_main"
             android:exported="false" />
-        <activity
-            android:name=".Profile"
-            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
