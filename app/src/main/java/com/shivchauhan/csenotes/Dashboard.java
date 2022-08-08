@@ -160,10 +160,10 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 intent = new Intent(this, Sem4.class);
                 startActivity(intent);
                 break;
-            case R.id.semester5:
-                intent = new Intent(this, Login_Register_main.class);
-                startActivity(intent);
-                break;
+//            case R.id.semester5:
+//                intent = new Intent(this, test1.class);
+//                startActivity(intent);
+//                break;
         }
     }
 

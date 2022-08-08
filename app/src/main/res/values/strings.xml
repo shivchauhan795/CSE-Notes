@@ -114,4 +114,5 @@
     <string name="name">Name</string>
     <string name="name_hint">Enter Name</string>
     <string name="Logout">Logout</string>
+    <string name="image">Image</string>
 </resources>

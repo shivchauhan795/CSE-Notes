@@ -12,5 +12,9 @@
     <color name="head_color">#2E2A2A</color>
     <color name="main_head_color">#2E2A2A</color>
     <color name="top_icon">#000000</color>
+    <color name="back">#FFFEFE</color>
+    <color name="view">#000000</color>
+    <color name="hint">#919191</color>
+    <color name="button">#FFEFA7</color>
 
 </resources>
