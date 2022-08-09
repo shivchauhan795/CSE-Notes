@@ -19,8 +19,8 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_above="@+id/appname"
         android:src="@drawable/logo"
         tools:ignore="ContentDescription" />

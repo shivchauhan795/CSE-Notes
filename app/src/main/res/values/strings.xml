@@ -115,4 +115,6 @@
     <string name="name_hint">Enter Name</string>
     <string name="Logout">Logout</string>
     <string name="image">Image</string>
+    <string name="from">from</string>
+    <string name="my_name">Shiv Chauhan</string>
 </resources>
