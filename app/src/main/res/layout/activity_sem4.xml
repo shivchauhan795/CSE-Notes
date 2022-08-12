@@ -343,9 +343,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Daa_Complete_Notes"
                                     android:paddingStart="60dp"
                                     android:paddingEnd="40dp"
-                                    android:text="@string/unit_1"
+                                    android:text="@string/complete_notes"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
@@ -356,9 +357,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Daa_Lords"
                                     android:paddingStart="30dp"
                                     android:paddingEnd="0dp"
-                                    android:text="@string/unit_2"
+                                    android:text="@string/lords"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
@@ -376,27 +378,16 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Daa_Books"
                                     android:paddingStart="60dp"
                                     android:paddingEnd="40dp"
-                                    android:text="@string/unit_3"
+                                    android:text="@string/book"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
                                     android:textSize="20sp"
                                     android:textStyle="bold" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/unit_4"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
                             </LinearLayout>
 
 
@@ -497,9 +488,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Os_Module1"
                                     android:paddingStart="60dp"
                                     android:paddingEnd="40dp"
-                                    android:text="@string/teacher_notes"
+                                    android:text="@string/module_1"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
@@ -510,9 +502,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Os_Module2"
                                     android:paddingStart="30dp"
                                     android:paddingEnd="0dp"
-                                    android:text="@string/unit_2"
+                                    android:text="@string/module_2"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
@@ -530,9 +523,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Os_Module3"
                                     android:paddingStart="60dp"
                                     android:paddingEnd="40dp"
-                                    android:text="@string/unit_3"
+                                    android:text="@string/module_3"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
@@ -543,14 +537,37 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Os_Module4"
                                     android:paddingStart="30dp"
                                     android:paddingEnd="0dp"
-                                    android:text="@string/unit_4"
+                                    android:text="@string/module_4"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
                                     android:textSize="20sp"
                                     android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Os_Module5"
+                                    android:paddingStart="60dp"
+                                    android:paddingEnd="40dp"
+                                    android:text="@string/module_5"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
                             </LinearLayout>
 
 
@@ -650,9 +667,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Coa_Complete_Notes"
                                     android:paddingStart="60dp"
                                     android:paddingEnd="40dp"
-                                    android:text="@string/book"
+                                    android:text="@string/complete_notes"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
@@ -662,51 +680,17 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-
                                     android:fontFamily="casual"
+                                    android:onClick="open_Sem4_Coa_Lords"
                                     android:paddingStart="30dp"
                                     android:paddingEnd="0dp"
-                                    android:text="@string/unit_2"
+                                    android:text="@string/lords"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
                                     android:textSize="20sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/unit_3"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/unit_4"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
 
                         </LinearLayout>
 
@@ -923,62 +907,29 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="casual"
+                                    android:onClick="open_Sem4_evs_complete"
                                     android:paddingStart="60dp"
                                     android:paddingEnd="40dp"
-                                    android:text="@string/book"
+                                    android:text="@string/complete_notes"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
                                     android:textSize="20sp"
                                     android:textStyle="bold" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/unit_2"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="TooManyViews" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                tools:ignore="TooManyViews">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/unit_3"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/unit_4"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
+                                <!--                                <TextView-->
+                                <!--                                    android:layout_width="wrap_content"-->
+                                <!--                                    android:layout_height="wrap_content"-->
+                                <!--                                    android:fontFamily="casual"-->
+                                <!--                                    android:paddingStart="30dp"-->
+                                <!--                                    android:paddingEnd="0dp"-->
+                                <!--                                    android:text="@string/unit_2"-->
+                                <!--                                    android:textAlignment="center"-->
+                                <!--                                    android:textAllCaps="false"-->
+                                <!--                                    android:textColor="@color/text_color"-->
+                                <!--                                    android:textSize="20sp"-->
+                                <!--                                    android:textStyle="bold"-->
+                                <!--                                    tools:ignore="TooManyViews" />-->
                             </LinearLayout>
 
 

@@ -24,7 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Dashboard extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
 
-    CardView c1, c2, c3, c4, c5;
+    CardView c1, c2, c3, c4;
     Toolbar toolbar;
 
     // Drawer menu
@@ -61,13 +61,13 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         c2 = findViewById(R.id.semester2);
         c3 = findViewById(R.id.semester3);
         c4 = findViewById(R.id.semester4);
-        c5 = findViewById(R.id.semester5);
+//        c5 = findViewById(R.id.semester5);
 
         c1.setOnClickListener(this);
         c2.setOnClickListener(this);
         c3.setOnClickListener(this);
         c4.setOnClickListener(this);
-        c5.setOnClickListener(this);
+//        c5.setOnClickListener(this);
 
         contribute.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -209,8 +209,8 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                     Toast.makeText(this, "Unable to share this app", Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case R.id.cCourse:
-                Uri uri = Uri.parse("https://youtube.com/playlist?list=PLC8gs-vTlicNNBB3K4MFzjFPn9yW7pBLC");
+            case R.id.youtube:
+                Uri uri = Uri.parse("https://youtu.be/fnIlE_0X_kA");
                 drawerLayout.closeDrawer(GravityCompat.START);
                 startActivity(new Intent(Intent.ACTION_VIEW, uri));
                 break;

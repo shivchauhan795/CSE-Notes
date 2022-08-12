@@ -31,9 +31,9 @@
             <group android:checkableBehavior="none">
 
                 <item
-                    android:id="@+id/cCourse"
+                    android:id="@+id/youtube"
                     android:icon="@drawable/youtube"
-                    android:title="C Course" />
+                    android:title="@string/Youtube" />
 
 
             </group>

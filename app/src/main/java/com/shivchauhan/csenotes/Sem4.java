@@ -256,6 +256,54 @@ public class Sem4 extends AppCompatActivity {
         opennotes("https://drive.google.com/drive/folders/1h8D7G_09gIQ3KL9yKKPSxangP1LdktOv?usp=sharing");
     }
 
+    //    EVS
+    public void open_Sem4_evs_complete(View view) {
+        opennotes("https://drive.google.com/drive/folders/1mboUjCTG9-eZJc1TjcJFq0zzfp5clR0S?usp=sharing");
+    }
+
+    //    OS
+    public void open_Sem4_Os_Module1(View view) {
+        opennotes("https://drive.google.com/drive/folders/1PWgzy4V5UeNX-jWgi6Ivsj-NeX1B7BCs?usp=sharing");
+    }
+
+    public void open_Sem4_Os_Module2(View view) {
+        opennotes("https://drive.google.com/drive/folders/1EDgQHMhRQFs9qEYx5Q1L-_tuDhYxWphb?usp=sharing");
+    }
+
+    public void open_Sem4_Os_Module3(View view) {
+        opennotes("https://drive.google.com/drive/folders/1aQY-bibCXOPBddhhe7nPdNJLvtl3vSF5?usp=sharing");
+    }
+
+    public void open_Sem4_Os_Module4(View view) {
+        opennotes("https://drive.google.com/drive/folders/1lPgP1JvCla9fwyXJpZEAtpnNvNJXS6wt?usp=sharing");
+    }
+
+    public void open_Sem4_Os_Module5(View view) {
+        opennotes("https://drive.google.com/drive/folders/1kAnlqA0qgU-gNX-WLzhkMMaUxuUJGjLC?usp=sharing");
+    }
+
+    //    DAA
+    public void open_Sem4_Daa_Complete_Notes(View view) {
+        opennotes("https://drive.google.com/drive/folders/13idmi1NBGZfJHGlaC13P3gj1zls93nVP?usp=sharing");
+    }
+
+    public void open_Sem4_Daa_Lords(View view) {
+        opennotes("https://drive.google.com/drive/folders/15Jv0TwVNviLSQ8GEJs3nxooVkLKPswgq?usp=sharing");
+    }
+
+    public void open_Sem4_Daa_Books(View view) {
+        opennotes("https://drive.google.com/drive/folders/1LZqLlA-XX1fWt4WSOC0JSCfWZ4loz9I8?usp=sharing");
+    }
+
+    //    COA
+    public void open_Sem4_Coa_Complete_Notes(View view) {
+        opennotes("https://drive.google.com/drive/folders/1rmgyL9kgiJ5AbpQFhDasODFKXzrAdp8T?usp=sharing");
+    }
+
+    public void open_Sem4_Coa_Lords(View view) {
+        opennotes("https://drive.google.com/drive/folders/1uTH8m75oO9SMgmh4jQdLFoKT_olI89IT?usp=sharing");
+    }
+
     private void opennotes(String s) {
         Uri uri = Uri.parse(s);
         startActivity(new Intent(Intent.ACTION_VIEW, uri));
