@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "571860436245-kt6po6drqve9sdm7d00c1lt3htllonc6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shivchauhan.csenotes",
+            "certificate_hash": "a2a507d0c1055a57dc7adbc909fed663949da763"
+          }
+        },
+        {
           "client_id": "571860436245-kmjhprp689o54iddiln85fs54qj9fop9.apps.googleusercontent.com",
           "client_type": 3
         }
