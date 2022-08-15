@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "571860436245-qqvhuq5nqip6m8oaugun8k2c640qcqhs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shivchauhan.csenotes",
+            "certificate_hash": "fefdf0dab8b8ef357345c5f260a523de8abeeb39"
+          }
+        },
+        {
           "client_id": "571860436245-kmjhprp689o54iddiln85fs54qj9fop9.apps.googleusercontent.com",
           "client_type": 3
         }

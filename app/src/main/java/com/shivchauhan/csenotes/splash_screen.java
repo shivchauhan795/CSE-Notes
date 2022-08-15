@@ -42,8 +42,30 @@ public class splash_screen extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        if (mAuth.getCurrentUser() != null) {
-            new Handler().postDelayed(new Runnable() {
+//        if (mAuth.getCurrentUser() != null) {
+//            new Handler().postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    Intent intent = new Intent(splash_screen.this, Dashboard.class);
+//                    startActivity(intent);
+//                    finish();
+//                }
+//            }, SPLASH_SCREEN);
+//
+//
+//        } else {
+//            new Handler().postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    Intent intent = new Intent(splash_screen.this, Login_Register_main.class);
+//                    startActivity(intent);
+//                    finish();
+//                }
+//            }, SPLASH_SCREEN);
+//
+//
+//        }
+        new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     Intent intent = new Intent(splash_screen.this, Dashboard.class);
@@ -51,19 +73,5 @@ public class splash_screen extends AppCompatActivity {
                     finish();
                 }
             }, SPLASH_SCREEN);
-
-
-        } else {
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    Intent intent = new Intent(splash_screen.this, Login_Register_main.class);
-                    startActivity(intent);
-                    finish();
-                }
-            }, SPLASH_SCREEN);
-
-
-        }
     }
 }

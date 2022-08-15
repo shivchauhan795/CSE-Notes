@@ -58,19 +58,19 @@
         </menu>
     </item>
 
-    <item android:title="@string/Logout">
+<!--    <item android:title="@string/Logout">-->
 
-        <menu>
-            <group android:checkableBehavior="none">
+<!--        <menu>-->
+<!--            <group android:checkableBehavior="none">-->
 
-                <item
-                    android:id="@+id/logout"
-                    android:icon="@drawable/ic_baseline_logout_24"
-                    android:title="@string/Logout" />
+<!--                <item-->
+<!--                    android:id="@+id/logout"-->
+<!--                    android:icon="@drawable/ic_baseline_logout_24"-->
+<!--                    android:title="@string/Logout" />-->
 
 
-            </group>
-        </menu>
-    </item>
+<!--            </group>-->
+<!--        </menu>-->
+<!--    </item>-->
 
 </menu>
