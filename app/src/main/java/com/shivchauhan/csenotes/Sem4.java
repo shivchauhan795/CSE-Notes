@@ -19,9 +19,6 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.LoadAdError;
 
 public class Sem4 extends AppCompatActivity {
-    RelativeLayout original1, original2, original3, original4, original5, original6;
-    LinearLayout hidden1, hidden2, hidden3, hidden4, hidden5, hidden6;
-    CardView cardView1, cardView2, cardView3, cardView4, cardView5, cardView6;
     private AdView mAdView;
 
     @Override
@@ -76,232 +73,31 @@ public class Sem4 extends AppCompatActivity {
             }
         });
 
-
-//        Maths
-        original1 = findViewById(R.id.mathsOriginal);
-        cardView1 = findViewById(R.id.mathsCard);
-        hidden1 = findViewById(R.id.mathsDropDown);
-        hidden1.setVisibility(View.GONE);
-
-//        daa
-        original2 = findViewById(R.id.daaOriginal);
-        cardView2 = findViewById(R.id.daaCard);
-        hidden2 = findViewById(R.id.daaDropDown);
-        hidden2.setVisibility(View.GONE);
-
-//        os
-        original3 = findViewById(R.id.osOriginal);
-        cardView3 = findViewById(R.id.osCard);
-        hidden3 = findViewById(R.id.osDropDown);
-        hidden3.setVisibility(View.GONE);
-
-//        coa
-        original4 = findViewById(R.id.coaOriginal);
-        cardView4 = findViewById(R.id.coaCard);
-        hidden4 = findViewById(R.id.coaDropDown);
-        hidden4.setVisibility(View.GONE);
-
-
-//        uhv
-        original5 = findViewById(R.id.uhvOriginal);
-        cardView5 = findViewById(R.id.uhvCard);
-        hidden5 = findViewById(R.id.uhvDropDown);
-        hidden5.setVisibility(View.GONE);
-
-//        evs
-        original6 = findViewById(R.id.evsOriginal);
-        cardView6 = findViewById(R.id.evsCard);
-        hidden6 = findViewById(R.id.evsDropDown);
-        hidden6.setVisibility(View.GONE);
-
-
-//        Maths
-        original1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (hidden1.getVisibility() == View.VISIBLE) {
-                    TransitionManager.beginDelayedTransition(original1,
-                            new AutoTransition());
-                    hidden1.setVisibility(View.GONE);
-                } else {
-                    TransitionManager.beginDelayedTransition(original1,
-                            new AutoTransition());
-                    hidden1.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-
-//        daa
-        original2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (hidden2.getVisibility() == View.VISIBLE) {
-                    TransitionManager.beginDelayedTransition(original2,
-                            new AutoTransition());
-                    hidden2.setVisibility(View.GONE);
-                } else {
-                    TransitionManager.beginDelayedTransition(original2,
-                            new AutoTransition());
-                    hidden2.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-
-//        os
-        original3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (hidden3.getVisibility() == View.VISIBLE) {
-                    TransitionManager.beginDelayedTransition(original3,
-                            new AutoTransition());
-                    hidden3.setVisibility(View.GONE);
-                } else {
-                    TransitionManager.beginDelayedTransition(original3,
-                            new AutoTransition());
-                    hidden3.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-
-//        coa
-        original4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (hidden4.getVisibility() == View.VISIBLE) {
-                    TransitionManager.beginDelayedTransition(original4,
-                            new AutoTransition());
-                    hidden4.setVisibility(View.GONE);
-                } else {
-                    TransitionManager.beginDelayedTransition(original4,
-                            new AutoTransition());
-                    hidden4.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-
-//        uhv
-        original5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (hidden5.getVisibility() == View.VISIBLE) {
-                    TransitionManager.beginDelayedTransition(original5,
-                            new AutoTransition());
-                    hidden5.setVisibility(View.GONE);
-                } else {
-                    TransitionManager.beginDelayedTransition(original5,
-                            new AutoTransition());
-                    hidden5.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-
-//        evs
-        original6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (hidden6.getVisibility() == View.VISIBLE) {
-                    TransitionManager.beginDelayedTransition(original6,
-                            new AutoTransition());
-                    hidden6.setVisibility(View.GONE);
-                } else {
-                    TransitionManager.beginDelayedTransition(original6,
-                            new AutoTransition());
-                    hidden6.setVisibility(View.VISIBLE);
-                }
-            }
-        });
     }
 
     //    MATHEMATICS
-    public void open_Sem4_Maths_Module1(View view) {
-        opennotes("https://drive.google.com/drive/folders/18bqvaT_uao3J5lbuo1Kb84BX0yV0CJvH?usp=sharing");
+    public void open_Sem4_Mathematics(View view) {
+        opennotes("https://drive.google.com/drive/folders/14DoFqGv2AANrVI-8QDezdfyVV78nztoF?usp=sharing");
     }
 
-    public void open_Sem4_Maths_Module2(View view) {
-        opennotes("https://drive.google.com/drive/folders/1P-Z818F1ZHRyP-J4vPD8g-OefUiYOieQ?usp=sharing");
+    public void open_Sem4_Daa(View view) {
+        opennotes("https://drive.google.com/drive/folders/1BjNERva92eJpdz4HCOY0AjuU9p3BGibc?usp=sharing");
     }
 
-    public void open_Sem4_Maths_Module3(View view) {
-        opennotes("https://drive.google.com/drive/folders/1dIbYiuD04-6kX6kvXDTOLnuacQ8aYOMk?usp=sharing");
+    public void open_Sem4_Os(View view) {
+        opennotes("https://drive.google.com/drive/folders/1oqpG578wUzfS7pI3Qt0EO7wqppkkPmjy?usp=sharing");
     }
 
-    public void open_Sem4_Maths_Module4(View view) {
-        opennotes("https://drive.google.com/drive/folders/1pyUvF_OKF47uHMq9cbmybrjKDVL5E_9x?usp=sharing");
+    public void open_Sem4_Coa(View view) {
+        opennotes("https://drive.google.com/drive/folders/12zyiuY6bLUJLpNFwiF_6s-mZuZ08rjha?usp=sharing");
     }
 
-    public void open_Sem4_Maths_Module5(View view) {
-        opennotes("https://drive.google.com/drive/folders/1jz22M1IdPg1IX6y551Iq6AoD-knVoUPr?usp=sharing");
+    public void open_Sem4_Uhv(View view) {
+        opennotes("https://drive.google.com/drive/folders/11o7ascU_HO241T2GeuG7qdMXVdQ1FXzm?usp=sharing");
     }
 
-    public void open_Sem4_Maths_lords(View view) {
-        opennotes("https://drive.google.com/drive/folders/1kdhFa-isKPR1hG83OXc2yIyrZysdOSe7?usp=sharing");
-    }
-
-    public void open_Sem4_Maths_SolvedQP(View view) {
-        opennotes("https://drive.google.com/drive/folders/10wuZ-5536YXSyBzHTw3akHnc-mrIkleg?usp=sharing");
-    }
-
-    //UHV
-    public void open_Sem4_uhv_book(View view) {
-        opennotes("https://drive.google.com/drive/folders/1cBSF7_4Ay1BRNbmOlf9gYJnPpziP7h7K?usp=sharing");
-    }
-
-    public void open_Sem4_uhv_complete_notes(View view) {
-        opennotes("https://drive.google.com/drive/folders/1h8D7G_09gIQ3KL9yKKPSxangP1LdktOv?usp=sharing");
-    }
-
-    //    EVS
-    public void open_Sem4_evs_complete(View view) {
+    public void open_Sem4_Evs(View view) {
         opennotes("https://drive.google.com/drive/folders/1mboUjCTG9-eZJc1TjcJFq0zzfp5clR0S?usp=sharing");
-    }
-
-    //    OS
-    public void open_Sem4_Os_Module1(View view) {
-        opennotes("https://drive.google.com/drive/folders/1PWgzy4V5UeNX-jWgi6Ivsj-NeX1B7BCs?usp=sharing");
-    }
-
-    public void open_Sem4_Os_Module2(View view) {
-        opennotes("https://drive.google.com/drive/folders/1EDgQHMhRQFs9qEYx5Q1L-_tuDhYxWphb?usp=sharing");
-    }
-
-    public void open_Sem4_Os_Module3(View view) {
-        opennotes("https://drive.google.com/drive/folders/1aQY-bibCXOPBddhhe7nPdNJLvtl3vSF5?usp=sharing");
-    }
-
-    public void open_Sem4_Os_Module4(View view) {
-        opennotes("https://drive.google.com/drive/folders/1lPgP1JvCla9fwyXJpZEAtpnNvNJXS6wt?usp=sharing");
-    }
-
-    public void open_Sem4_Os_Module5(View view) {
-        opennotes("https://drive.google.com/drive/folders/1kAnlqA0qgU-gNX-WLzhkMMaUxuUJGjLC?usp=sharing");
-    }
-
-    //    DAA
-    public void open_Sem4_Daa_Complete_Notes(View view) {
-        opennotes("https://drive.google.com/drive/folders/13idmi1NBGZfJHGlaC13P3gj1zls93nVP?usp=sharing");
-    }
-
-    public void open_Sem4_Daa_Lords(View view) {
-        opennotes("https://drive.google.com/drive/folders/15Jv0TwVNviLSQ8GEJs3nxooVkLKPswgq?usp=sharing");
-    }
-
-    public void open_Sem4_Daa_Books(View view) {
-        opennotes("https://drive.google.com/drive/folders/1LZqLlA-XX1fWt4WSOC0JSCfWZ4loz9I8?usp=sharing");
-    }
-
-    //    COA
-    public void open_Sem4_Coa_Complete_Notes(View view) {
-        opennotes("https://drive.google.com/drive/folders/1rmgyL9kgiJ5AbpQFhDasODFKXzrAdp8T?usp=sharing");
-    }
-
-    public void open_Sem4_Coa_Lords(View view) {
-        opennotes("https://drive.google.com/drive/folders/1uTH8m75oO9SMgmh4jQdLFoKT_olI89IT?usp=sharing");
     }
 
     private void opennotes(String s) {

@@ -46,6 +46,7 @@
                     android:layout_column="0"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill"
+                    android:onClick="open_Sem4_Mathematics"
                     android:layout_margin="10dp"
                     android:clickable="false"
                     android:focusable="true"
@@ -109,147 +110,7 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/mathsDropDown"
-                            android:layout_width="match_parent"
 
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/mathsOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Maths_Module1"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_1"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Maths_Module2"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/module_2"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Maths_Module3"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_3"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Maths_Module4"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/module_4"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Maths_Module5"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_5"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Maths_lords"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/lords"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Maths_SolvedQP"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/solvedQP"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                            </LinearLayout>
-                        </LinearLayout>
                     </RelativeLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -263,6 +124,7 @@
                     android:layout_column="0"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill"
+                    android:onClick="open_Sem4_Daa"
                     android:layout_margin="10dp"
                     android:clickable="false"
                     android:focusable="true"
@@ -327,72 +189,6 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/daaDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/daaOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Daa_Complete_Notes"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/complete_notes"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Daa_Lords"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/lords"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Daa_Books"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/book"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
                     </RelativeLayout>
 
 
@@ -407,6 +203,7 @@
                     android:layout_column="0"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill"
+                    android:onClick="open_Sem4_Os"
                     android:layout_margin="10dp"
                     android:clickable="false"
                     android:focusable="true"
@@ -472,106 +269,6 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/osDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/osOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Os_Module1"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_1"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Os_Module2"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/module_2"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Os_Module3"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_3"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Os_Module4"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/module_4"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Os_Module5"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_5"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
 
                     </RelativeLayout>
 
@@ -586,6 +283,7 @@
                     android:layout_rowWeight="1"
                     android:layout_column="0"
                     android:layout_columnWeight="1"
+                    android:onClick="open_Sem4_Coa"
                     android:layout_gravity="fill"
                     android:layout_margin="10dp"
                     android:clickable="false"
@@ -651,48 +349,7 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/coaDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/coaOriginal"
-                            android:orientation="vertical">
 
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Coa_Complete_Notes"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/complete_notes"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_Coa_Lords"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/lords"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                        </LinearLayout>
 
                     </RelativeLayout>
 
@@ -707,6 +364,7 @@
                     android:layout_rowWeight="1"
                     android:layout_column="0"
                     android:layout_columnWeight="1"
+                    android:onClick="open_Sem4_Uhv"
                     android:layout_gravity="fill"
                     android:layout_margin="10dp"
                     android:clickable="false"
@@ -771,49 +429,7 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/uhvDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/uhvOriginal"
-                            android:orientation="vertical">
 
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_uhv_book"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/book"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_uhv_complete_notes"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/complete_notes"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-                        </LinearLayout>
                     </RelativeLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -825,6 +441,7 @@
                     android:layout_row="5"
                     android:layout_rowWeight="1"
                     android:layout_column="0"
+                    android:onClick="open_Sem4_Evs"
                     android:layout_columnWeight="1"
                     android:layout_gravity="fill"
                     android:layout_margin="10dp"
@@ -890,50 +507,6 @@
 
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
-
-                        <LinearLayout
-                            android:id="@+id/evsDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/evsOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem4_evs_complete"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/complete_notes"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-
-                                <!--                                <TextView-->
-                                <!--                                    android:layout_width="wrap_content"-->
-                                <!--                                    android:layout_height="wrap_content"-->
-                                <!--                                    android:fontFamily="casual"-->
-                                <!--                                    android:paddingStart="30dp"-->
-                                <!--                                    android:paddingEnd="0dp"-->
-                                <!--                                    android:text="@string/unit_2"-->
-                                <!--                                    android:textAlignment="center"-->
-                                <!--                                    android:textAllCaps="false"-->
-                                <!--                                    android:textColor="@color/text_color"-->
-                                <!--                                    android:textSize="20sp"-->
-                                <!--                                    android:textStyle="bold"-->
-                                <!--                                    tools:ignore="TooManyViews" />-->
-                            </LinearLayout>
-
-
-                        </LinearLayout>
 
                     </RelativeLayout>
 

@@ -74,7 +74,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         contribute.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Dashboard.this, "Thank you!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Dashboard.this, "Thank you for Contribution!!", Toast.LENGTH_SHORT).show();
                 String[] addresses = {"csenoteshelp@gmail.com"};
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("*/*");

@@ -51,6 +51,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="open_Sem3_Mathematics"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -109,113 +110,6 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/mathsDropDown"
-                            android:layout_width="match_parent"
-
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/mathsOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_Maths_Module1"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_1"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_Maths_Module2"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/module_2"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_Maths_Module3"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_3"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_Maths_Module4"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/module_4"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_Maths_Formula"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/formula"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
 
                     </RelativeLayout>
 
@@ -236,6 +130,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="open_Sem3_Dsa"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -293,125 +188,6 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/dsaDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/dsaOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_dsa_Module1"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_1"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_dsa_Module2"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/module_2"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_dsa_Module3"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_3"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_dsa_Module4"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/module_4"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_dsa_Module5"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_5"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_dsa_solved_QP"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/solvedQP"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-
-                        </LinearLayout>
 
                     </RelativeLayout>
 
@@ -432,6 +208,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="open_Sem3_Oops"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -488,123 +265,6 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/oopsDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/oopsOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_oops_Module1"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_1"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_oops_Module2"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/module_2"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_oops_Module3"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_3"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_oops_Module4"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/module_4"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_oops_Module5"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/module_5"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_oops_book"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/book"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-
-                        </LinearLayout>
 
                     </RelativeLayout>
 
@@ -625,6 +285,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="open_Sem3_De"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -681,52 +342,6 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/deDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/deOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                tools:ignore="UselessParent">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_de_books"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/book"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_de_ppts"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/ppts"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-
-                        </LinearLayout>
 
                     </RelativeLayout>
 
@@ -747,6 +362,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="open_Sem3_Dos"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -803,34 +419,7 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/dosDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/dosOriginal"
-                            android:orientation="vertical">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                tools:ignore="UselessParent">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="open_Sem3_dos_teacher_notes"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/teacher_notes"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-                        </LinearLayout>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>

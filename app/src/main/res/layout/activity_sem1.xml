@@ -55,6 +55,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="open_Sem1_Mathematics"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -114,79 +115,6 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/mathsDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/mathsOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                tools:ignore="UselessParent">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="openMaths1"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/Sem1Mathsbooks"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <!--                            <TextView-->
-                                <!--                                android:layout_width="wrap_content"-->
-                                <!--                                android:layout_height="wrap_content"-->
-
-                                <!--                                android:fontFamily="casual"-->
-                                <!--                                android:paddingStart="30dp"-->
-                                <!--                                android:text="Teacher Notes"-->
-                                <!--                                android:textAlignment="center"-->
-                                <!--                                android:textAllCaps="false"-->
-                                <!--                                android:textSize="20sp"-->
-                                <!--                                android:textStyle="bold" />-->
-                            </LinearLayout>
-
-                            <!--                        <LinearLayout-->
-                            <!--                            android:layout_width="match_parent"-->
-
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:layout_marginTop="10dp">-->
-
-                            <!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:fontFamily="casual"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:paddingStart="30dp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:text="Teacher Notes"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAlignment="center"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAllCaps="false"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textSize="20sp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
-
-                            <!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
-
-                            <!--                            &lt;!&ndash;                                android:fontFamily="casual"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:paddingStart="30dp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:text="Teacher Notes"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAlignment="center"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAllCaps="false"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textSize="20sp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
-                            <!--                        </LinearLayout>-->
-
-
-                        </LinearLayout>
 
                     </RelativeLayout>
 
@@ -207,6 +135,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="open_Sem1_Physics"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -264,92 +193,6 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/physicsDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/physicsOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <TextView
-                                    android:id="@+id/physicsUnit1"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="openPhysicsUnit1"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/unit_1"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:id="@+id/physicsUnit2"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="openPhysicsUnit2"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/unit_2"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp">
-
-                                <TextView
-                                    android:id="@+id/physicsUnit3"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="openPhysicsUnit3"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/unit_3"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <TextView
-                                    android:id="@+id/physicsUnit4"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="openPhysicsUnit4"
-                                    android:paddingStart="30dp"
-                                    android:paddingEnd="0dp"
-                                    android:text="@string/unit_4"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-                            </LinearLayout>
-
-
-                        </LinearLayout>
 
                     </RelativeLayout>
 
@@ -370,6 +213,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="open_Sem1_Bee"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -428,82 +272,6 @@
                         </RelativeLayout>
                         <!--        Below this is the hidden mode -->
 
-                        <LinearLayout
-                            android:id="@+id/beeDropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/beeOriginal"
-                            android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                tools:ignore="UselessParent">
-
-                                <TextView
-                                    android:id="@+id/beeNotes"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="openBeeNotes"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/teacher_notes"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <!--                            <TextView-->
-                                <!--                                android:layout_width="wrap_content"-->
-                                <!--                                android:layout_height="wrap_content"-->
-
-                                <!--                                android:fontFamily="casual"-->
-                                <!--                                android:paddingStart="30dp"-->
-                                <!--                                android:text="Unit 2"-->
-                                <!--                                android:textAlignment="center"-->
-                                <!--                                android:textAllCaps="false"-->
-                                <!--                                android:textSize="20sp"-->
-                                <!--                                android:textStyle="bold" />-->
-                            </LinearLayout>
-
-                            <!--                        <LinearLayout-->
-                            <!--                            android:layout_width="match_parent"-->
-
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:layout_marginTop="10dp">-->
-
-                            <!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:fontFamily="casual"&ndash;&gt;-->
-
-                            <!--                            &lt;!&ndash;                                android:paddingStart="60dp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:paddingEnd="40dp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:text="Unit 3"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAlignment="center"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAllCaps="false"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textSize="20sp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
-
-                            <!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
-
-                            <!--                            &lt;!&ndash;                                android:fontFamily="casual"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:paddingStart="30dp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:text="Unit4"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAlignment="center"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAllCaps="false"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textSize="20sp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
-                            <!--                        </LinearLayout>-->
-
-
-                        </LinearLayout>
 
                     </RelativeLayout>
 
@@ -524,6 +292,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="open_Sem1_Egd"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -587,73 +356,6 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/egdOriginal"
                             android:orientation="vertical">
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                tools:ignore="UselessParent">
-
-                                <TextView
-                                    android:id="@+id/openEgdBook"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="casual"
-                                    android:onClick="openEgdBook"
-                                    android:paddingStart="60dp"
-                                    android:paddingEnd="40dp"
-                                    android:text="@string/book"
-                                    android:textAlignment="center"
-                                    android:textAllCaps="false"
-                                    android:textColor="@color/text_color"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    tools:ignore="UsingOnClickInXml" />
-
-                                <!--                            <TextView-->
-                                <!--                                android:layout_width="wrap_content"-->
-                                <!--                                android:layout_height="wrap_content"-->
-
-                                <!--                                android:fontFamily="casual"-->
-                                <!--                                android:paddingStart="30dp"-->
-                                <!--                                android:text="Unit 2"-->
-                                <!--                                android:textAlignment="center"-->
-                                <!--                                android:textAllCaps="false"-->
-                                <!--                                android:textSize="20sp"-->
-                                <!--                                android:textStyle="bold" />-->
-                            </LinearLayout>
-
-                            <!--                        <LinearLayout-->
-                            <!--                            android:layout_width="match_parent"-->
-
-                            <!--                            android:layout_height="wrap_content"-->
-                            <!--                            android:layout_marginTop="10dp">-->
-
-                            <!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:fontFamily="casual"&ndash;&gt;-->
-
-                            <!--                            &lt;!&ndash;                                android:paddingStart="60dp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:paddingEnd="40dp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:text="Unit 3"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAlignment="center"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAllCaps="false"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textSize="20sp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
-
-                            <!--                            &lt;!&ndash;                            <TextView&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_width="wrap_content"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
-
-                            <!--                            &lt;!&ndash;                                android:fontFamily="casual"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:paddingStart="30dp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:text="Unit4"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAlignment="center"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textAllCaps="false"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textSize="20sp"&ndash;&gt;-->
-                            <!--                            &lt;!&ndash;                                android:textStyle="bold" />&ndash;&gt;-->
-                            <!--                        </LinearLayout>-->
 
 
                         </LinearLayout>
