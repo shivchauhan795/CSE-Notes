@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.shivchauhan.csenotes"
         minSdk 21
-        targetSdk 31
-        versionCode 7
-        versionName "2.0"
+        targetSdk 33
+        versionCode 8
+        versionName "3.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
