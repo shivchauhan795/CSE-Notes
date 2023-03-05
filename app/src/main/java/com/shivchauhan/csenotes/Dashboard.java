@@ -24,7 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Dashboard extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
 
-    CardView c1, c2, c3, c4;
+    CardView c1, c2, c3, c4, c5, c6;
     Toolbar toolbar;
 
     // Drawer menu
@@ -61,13 +61,15 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         c2 = findViewById(R.id.semester2);
         c3 = findViewById(R.id.semester3);
         c4 = findViewById(R.id.semester4);
-//        c5 = findViewById(R.id.semester5);
+        c5 = findViewById(R.id.semester5);
+        c6 = findViewById(R.id.semester6);
 
         c1.setOnClickListener(this);
         c2.setOnClickListener(this);
         c3.setOnClickListener(this);
         c4.setOnClickListener(this);
-//        c5.setOnClickListener(this);
+        c5.setOnClickListener(this);
+        c6.setOnClickListener(this);
 
         contribute.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,10 +162,14 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 intent = new Intent(this, Sem4.class);
                 startActivity(intent);
                 break;
-//            case R.id.semester5:
-//                intent = new Intent(this, test1.class);
-//                startActivity(intent);
-//                break;
+            case R.id.semester5:
+                intent = new Intent(this, Sem5.class);
+                startActivity(intent);
+                break;
+            case R.id.semester6:
+                intent = new Intent(this, Sem6.class);
+                startActivity(intent);
+                break;
         }
     }
 
@@ -194,6 +200,16 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 drawerLayout.closeDrawer(GravityCompat.START);
                 startActivity(intent);
                 break;
+            case R.id.sem5:
+                intent = new Intent(this, Sem5.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                startActivity(intent);
+                break;
+            case R.id.sem6:
+                intent = new Intent(this, Sem6.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                startActivity(intent);
+                break;
             case R.id.share:
                 try {
                     //                    For sharing app
@@ -210,7 +226,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 }
                 break;
             case R.id.youtube:
-                Uri uri = Uri.parse("https://youtu.be/fnIlE_0X_kA");
+                Uri uri = Uri.parse("https://www.youtube.com/channel/UCjmpH2Ebko0-d0J-7N7y1Uw");
                 drawerLayout.closeDrawer(GravityCompat.START);
                 startActivity(new Intent(Intent.ACTION_VIEW, uri));
                 break;

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sem5">
+    tools:context=".Sem6">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:padding="15dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="0dp"
-                android:text="@string/Fifth_Semester"
+                android:text="@string/Sixth_Semester"
                 android:textColor="@color/head_color"
                 android:textSize="30sp" />
 
@@ -51,7 +51,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="open_Sem5_Flat"
+                    android:onClick="open_Sem5_Wc"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -77,9 +77,8 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_gravity="center_vertical|center_horizontal"
                                 android:layout_marginStart="200dp"
-                                android:paddingStart="10dp"
-                                android:paddingEnd="10dp"
-                                android:src="@drawable/flat"
+                                android:padding="5dp"
+                                android:src="@drawable/wc"
                                 tools:ignore="ContentDescription" />
 
                             <!--        Linear Layout for heading Mathematics -->
@@ -98,7 +97,7 @@
                                     android:fontFamily="cursive"
                                     android:paddingStart="30dp"
                                     android:paddingEnd="0dp"
-                                    android:text="@string/flat"
+                                    android:text="@string/wc"
                                     android:textAlignment="center"
                                     android:textAllCaps="false"
                                     android:textColor="@color/text_color"
@@ -129,7 +128,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="open_Sem5_Se"
+                    android:onClick="open_Sem5_Ai"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -156,7 +155,7 @@
                                 android:layout_gravity="center_vertical|center_horizontal"
                                 android:layout_marginStart="200dp"
                                 android:padding="6dp"
-                                android:src="@drawable/se"
+                                android:src="@drawable/artificial_intelligence"
                                 tools:ignore="ContentDescription" />
 
                             <!--        Linear Layout for heading daa -->
@@ -175,7 +174,7 @@
                                     android:fontFamily="cursive"
                                     android:paddingStart="30dp"
                                     android:paddingEnd="0dp"
-                                    android:text="@string/se"
+                                    android:text="@string/ai"
                                     android:textAlignment="center"
                                     android:textAllCaps="true"
                                     android:textColor="@color/text_color"
@@ -208,7 +207,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="open_Sem5_Dbms"
+                    android:onClick="open_Sem5_Cd"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -236,7 +235,7 @@
                                 android:layout_gravity="center_vertical|center_horizontal"
                                 android:layout_marginStart="200dp"
                                 android:padding="10dp"
-                                android:src="@drawable/data"
+                                android:src="@drawable/flat"
                                 tools:ignore="ContentDescription" />
 
                             <!--        Linear Layout for heading os -->
@@ -255,7 +254,7 @@
                                     android:fontFamily="cursive"
                                     android:paddingStart="30dp"
                                     android:paddingEnd="0dp"
-                                    android:text="@string/dbms"
+                                    android:text="@string/cd"
                                     android:textAlignment="center"
                                     android:textAllCaps="true"
                                     android:textColor="@color/text_color"
@@ -288,7 +287,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="open_Sem5_Wt"
+                    android:onClick="open_Sem5_Cc"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -314,8 +313,8 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_gravity="center_vertical|center_horizontal"
                                 android:layout_marginStart="200dp"
-                                android:padding="5dp"
-                                android:src="@drawable/wt"
+                                android:padding="8dp"
+                                android:src="@drawable/cc"
                                 tools:ignore="ContentDescription" />
 
                             <!--        Linear Layout for heading de -->
@@ -334,7 +333,7 @@
                                     android:fontFamily="cursive"
                                     android:paddingStart="30dp"
                                     android:paddingEnd="0dp"
-                                    android:text="@string/wt"
+                                    android:text="@string/cc"
                                     android:textAlignment="center"
                                     android:textAllCaps="true"
                                     android:textColor="@color/text_color"
@@ -367,7 +366,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="open_Sem5_Erp"
+                    android:onClick="open_Sem5_Mad"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -393,9 +392,8 @@
                                 android:layout_alignParentBottom="true"
                                 android:layout_gravity="center_vertical|center_horizontal"
                                 android:layout_marginStart="200dp"
-                                android:paddingStart="10dp"
-                                android:paddingEnd="0dp"
-                                android:src="@drawable/erp"
+                                android:padding="3dp"
+                                android:src="@drawable/mad"
                                 tools:ignore="ContentDescription" />
 
                             <!--        Linear Layout for heading uhv -->
@@ -414,7 +412,7 @@
                                     android:fontFamily="cursive"
                                     android:paddingStart="30dp"
                                     android:paddingEnd="0dp"
-                                    android:text="@string/erp"
+                                    android:text="@string/mad"
                                     android:textAlignment="center"
                                     android:textAllCaps="true"
                                     android:textColor="@color/text_color"
@@ -445,7 +443,7 @@
                     android:focusable="true"
                     android:fontFamily="cursive"
                     android:foreground="?android:attr/selectableItemBackground"
-                    android:onClick="open_Sem5_Coi"
+                    android:onClick="open_Sem5_Ml"
                     app:cardBackgroundColor="#BDBB86FC"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="0dp">
@@ -472,7 +470,7 @@
                                 android:layout_gravity="center_vertical|center_horizontal"
                                 android:layout_marginStart="200dp"
                                 android:padding="7dp"
-                                android:src="@drawable/coi"
+                                android:src="@drawable/ml"
                                 tools:ignore="ContentDescription" />
 
                             <!--        Linear Layout for heading evs -->
@@ -492,7 +490,7 @@
                                     android:fontFamily="cursive"
                                     android:paddingStart="30dp"
                                     android:paddingEnd="0dp"
-                                    android:text="@string/coi"
+                                    android:text="@string/ml"
                                     android:textAlignment="center"
                                     android:textAllCaps="true"
                                     android:textColor="@color/text_color"
