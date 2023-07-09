@@ -71,26 +71,32 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         c5.setOnClickListener(this);
         c6.setOnClickListener(this);
 
-        contribute.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(Dashboard.this, "Thank you for Contribution!!", Toast.LENGTH_SHORT).show();
-                String[] addresses = {"csenoteshelp@gmail.com"};
-                Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("*/*");
-                intent.putExtra(Intent.EXTRA_EMAIL, addresses);
-                boolean attachment = false;
-                intent.putExtra(Intent.EXTRA_STREAM, attachment);
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intent);
-                }
-            }
-        });
+//        contribute.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                // code for mail
+//
+//                Toast.makeText(Dashboard.this, "Thank you for Contribution!!", Toast.LENGTH_SHORT).show();
+//                String[] addresses = {"csenoteshelp@gmail.com"};
+//                Intent intent = new Intent(Intent.ACTION_SEND);
+//                intent.setType("*/*");
+//                intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+//                boolean attachment = false;
+//                intent.putExtra(Intent.EXTRA_STREAM, attachment);
+//                if (intent.resolveActivity(getPackageManager()) != null) {
+//                    startActivity(intent);
+//                }
+//
+//            }
+//        });
 
     }
 
-    public void open_profile(View view) {
-
+    public void open_contribute(View view) {
+        Intent intent = new Intent(this, Contribute.class);
+        drawerLayout.closeDrawer(GravityCompat.START);
+        startActivity(intent);
     }
 
     @Override
@@ -226,7 +232,12 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 }
                 break;
             case R.id.youtube:
-                Uri uri = Uri.parse("https://www.youtube.com/channel/UCjmpH2Ebko0-d0J-7N7y1Uw");
+                Uri uri = Uri.parse("https://www.youtube.com/@shivchauhan795");
+                drawerLayout.closeDrawer(GravityCompat.START);
+                startActivity(new Intent(Intent.ACTION_VIEW, uri));
+                break;
+            case R.id.instagram:
+                uri = Uri.parse("https://www.instagram.com/cse.notes");
                 drawerLayout.closeDrawer(GravityCompat.START);
                 startActivity(new Intent(Intent.ACTION_VIEW, uri));
                 break;
@@ -236,6 +247,16 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
 //                startActivity(new Intent(Dashboard.this, Login.class));
 //                finish();
 //                break;
+            case R.id.contribute:
+                intent = new Intent(this, Contribute.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                startActivity(intent);
+                break;
+            case R.id.developer:
+                intent = new Intent(this, Developer.class);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                startActivity(intent);
+                break;
             case R.id.rateus:
                 Uri uri1 = Uri.parse("https://play.google.com/store/apps/details?id=com.shivchauhan.csenotes");
                 Intent intent1 = new Intent(Intent.ACTION_VIEW, uri1);

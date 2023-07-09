@@ -53,8 +53,9 @@
                         android:clickable="true"
                         android:contentDescription="@string/contribute"
                         android:focusable="true"
-                        android:padding="5dp"
-                        android:src="@drawable/ic_baseline_person_24" />
+                        android:onClick="open_contribute"
+                        android:padding="1dp"
+                        android:src="@drawable/contribute" />
                 </LinearLayout>
 
                 <TextView

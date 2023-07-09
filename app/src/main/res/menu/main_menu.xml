@@ -23,17 +23,17 @@
                     android:title="@string/Semester4" />
                 <item
                     android:id="@+id/sem5"
-                    android:icon="@drawable/ic_baseline_filter_4_24"
+                    android:icon="@drawable/baseline_filter_5_24"
                     android:title="@string/Semester5" />
                 <item
                     android:id="@+id/sem6"
-                    android:icon="@drawable/ic_baseline_filter_4_24"
+                    android:icon="@drawable/baseline_filter_6_24"
                     android:title="@string/Semester6" />
             </group>
         </menu>
     </item>
 
-    <item android:title="@string/Youtube">
+    <item android:title="@string/social_media">
 
         <menu>
             <group android:checkableBehavior="none">
@@ -42,6 +42,25 @@
                     android:id="@+id/youtube"
                     android:icon="@drawable/youtube"
                     android:title="@string/Youtube" />
+                <item
+                    android:id="@+id/instagram"
+                    android:icon="@drawable/instagram"
+                    android:title="@string/Instagram" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/Contribute">
+
+        <menu>
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/contribute"
+                    android:icon="@drawable/contribute"
+                    android:title="@string/Contribute" />
 
 
             </group>
@@ -52,7 +71,10 @@
 
         <menu>
             <group android:checkableBehavior="none">
-
+                <item
+                    android:id="@+id/developer"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:title="Developer"/>
                 <item
                     android:id="@+id/share"
                     android:icon="@drawable/ic_baseline_share_24"

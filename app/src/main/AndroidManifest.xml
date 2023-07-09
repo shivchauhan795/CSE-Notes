@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSENotes">
         <activity
+            android:name=".Developer"
+            android:exported="false" />
+        <activity
+            android:name=".Contribute"
+            android:exported="false" />
+        <activity
             android:name=".Sem6"
             android:exported="false" />
         <activity
@@ -34,15 +40,12 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-1720186780950212~6179623631" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity
             android:name=".chem"
-            android:exported="false" />
-        <activity
-            android:name=".maths2"
-            android:exported="false" />
-        <activity
-            android:name=".maths1"
             android:exported="false" />
         <activity
             android:name=".Sem5"

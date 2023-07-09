@@ -74,6 +74,8 @@
     <string name="Semester5">Semester5</string>
     <string name="Semester6">Semester6</string>
     <string name="Youtube">YouTube</string>
+    <string name="Contribute">Contribute</string>
+    <string name="Upload">Upload</string>
     <string name="Share">Share</string>
     <string name="AboutUs">About Us</string>
     <string name="RateUs">Rate Us</string>
@@ -104,6 +106,10 @@
     <string name="coa">Coa</string>
     <string name="uhv">Uhv</string>
     <string name="evs">Evs</string>
+    <string name="cn">Cn</string>
+    <string name="social_media">Social Media</string>
+    <string name="Instagram">Instagram</string>
+
     <string name="module_1">Module 1</string>
     <string name="module_2">Module 2</string>
     <string name="module_3">Module 3</string>
@@ -133,4 +139,10 @@
     <string name="image">Image</string>
     <string name="from">from</string>
     <string name="my_name">Shiv Chauhan</string>
+    <string name="contribute_page_description">You can contribute by clicking on the Button below. Thanks for your Contribution!!</string>
+    <string name="shiv_chauhan">Shiv Chauhan</string>
+    <string name="developer">Developer</string>
+    <string name="developer_picture">Developer Picture</string>
+    <string name="developer_description">Hi, hope you find this application helpful in your academics. Also help other by sharing it in whatsapp groups.\n\nAlso you can follow me on social media platforms:</string>
+    <string name="linkedin">LinkedIn</string>
 </resources>

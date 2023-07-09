@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Developer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/my_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-50dp"
+            android:contentDescription="@string/developer_picture"
+            android:src="@drawable/my_pic" />
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="@string/shiv_chauhan"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/developer_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-30dp"
+            android:text="@string/developer"
+            android:textColor="#D8000000"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/developer_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/developer_tag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:padding="2dp"
+            android:text="@string/developer_description"
+            android:textColor="#D8000000"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/linkedin_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/developer_description"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:onClick="open_linkedin"
+            android:padding="10dp"
+            android:text="@string/linkedin"
+            android:textColor="#D8000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/youtube_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linkedin_link"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="open_youtube"
+            android:padding="10dp"
+            android:text="@string/Youtube"
+            android:textColor="#D8000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

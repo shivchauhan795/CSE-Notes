@@ -39,6 +39,10 @@ public class Sem5 extends AppCompatActivity {
         opennotes("https://drive.google.com/drive/folders/1Z8tfUO3sNLKzlHIGwprNDa7_Ezxn4krJ?usp=sharing");
     }
 
+    public void open_Sem5_Cn(View view) {
+        opennotes("https://drive.google.com/drive/folders/1ADAd3f7NnoAutVCembONf1Fp7e_dOke_?usp=sharing");
+    }
+
     private void opennotes(String s) {
         Uri uri = Uri.parse(s);
         startActivity(new Intent(Intent.ACTION_VIEW, uri));
